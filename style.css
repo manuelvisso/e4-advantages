@@ -1,0 +1,404 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif; 
+    position: relative;
+    /* background: url(/assets/kobby-mendez-xBFTjrMIC0c-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed */
+
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 14vh;
+    position: sticky;
+    top: 0px;
+    background-color: #fafafa;
+    font-weight: 400;
+    z-index: 999;
+
+}
+
+.logo-container{
+    padding-left: 25px;
+    height: 100%;
+        
+}
+
+.img-logo {
+    height: 100%;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+       
+}
+
+.ul-navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #290007;
+    font-size: 18px;
+    transition: 0.4s ease;
+}
+
+.nav-link:hover{
+    background-color: #750014;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding-right: 25px ;
+
+}
+
+.search-box input {
+    border-radius: 10px;
+    padding: 5px 0px 5px 30px;
+    border: 3px solid  #750014;
+    font-family: 'Lato', sans-serif; 
+    position: relative; 
+    background: url(/assets/icons8-search-50.png) no-repeat left  ;
+    background-size: 20px;   
+    background-position: 5%;
+
+}
+
+.hero-landing * {
+    z-index: 1;
+}
+
+.hero-landing {
+    width: 100%;
+    height: calc(100vh - 14vh);
+    background: url(/assets/kelsey-chance-tAH2cA_BL5g-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.hero-landing::after {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.4);
+}
+
+.hero-container{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+
+}
+
+.hero-slogan{
+    color: yellow;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.hero-text{
+    color: #B3B300;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+.hero-button {
+    background-color: transparent;
+    border: 2px solid yellow;
+    width: 150px;
+    height: 50px;
+    transition: 0.3s ease;
+}
+
+.hero-link{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.hero-button:hover{
+    background-color: rgba(255, 0, 0, 0.5);
+    border-color:rgba(255, 0, 0, 0.5);
+    font-style: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+
+.quienes-somos{
+    height: 43vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    text-align: center;
+    padding-right: 50px;
+    background-color: whitesmoke;
+
+
+}
+
+.somos-title-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 100px;
+    width: 40%;
+
+}
+
+.somos-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    gap: 20px;
+    line-height: 1.5;
+    width: 60%;
+
+}
+
+.somos-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: #290007;
+}
+
+.somos-text{
+    font-size: 20px;
+    color: #C20020;
+}
+
+.ventajas {
+    height: 43vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    text-align: center;
+    padding-right: 50px;
+    background-color: whitesmoke;    
+}
+
+.ventajas-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 100px;
+    width: 4%;
+
+}
+
+.ventajas_div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+    
+}
+
+.ventajas_div article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 33%;
+    height: 25vh;
+    gap: 10px;
+    padding: 10px;    
+}
+
+.ventajas_div article:hover {
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 0px rgb(41, 0, 7);
+}
+
+.ventajas-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #290007;
+}
+
+.ventajas-subtitle {
+    font-size: 20px;
+    color: #290007;
+}
+
+.ventajas_div i {
+    font-size: 5vh;
+    color: #290007;
+
+}
+
+.ventajas-text {
+    font-size: 16px;
+    color: #C20020;
+}
+
+.ventajas-text span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #290007;
+    text-transform: uppercase;
+}
+
+.procedimiento * {
+    z-index: 1;
+}
+
+.procedimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    gap: 20px;
+    color: white;
+    position: relative;
+    width: 100%;
+    background-image: url(/assets/courier-driver-4886839.jpg);
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+.procedimiento::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: brightness(0.8);
+    background: linear-gradient(270deg, black 40%, transparent);
+}
+
+.procedimiento_div article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    width: 30vh;
+    height: 25vh;
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.procedimiento-blank {
+    width: 30%;
+}
+
+.procedimiento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+    width: 55%;
+}
+
+.procedimiento-container > p {
+    font-size: 40px;
+    font-weight: 600;
+    color: yellow;
+    padding-bottom: 50px;
+}
+
+.procedimiento div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    /* padding: 0 20px; */
+    flex-wrap: wrap;
+    
+}
+
+.procedimiento_div p {
+    font-size: 16px;
+}
+
+.procedimiento_div i {
+    font-size: 5vh;
+    color: rgb(179, 179, 0);
+}
+
+.procedimiento_div article:hover {
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px 0px yellow;
+}
+
+.procedimiento_div a {
+    text-decoration: none;
+    color: yellow;
+}
+
+#quienes-somos {
+    height: 20px;
+    width: 20px;
+    /* background-color: red; */
+    position: absolute;
+    top: 31.6%;
+
+}
+
+#quieres-pedir {
+    height: 20px;
+    width: 20px;
+    /* background-color: red; */
+    position: absolute;
+    top: 63.5%;
+
+}
